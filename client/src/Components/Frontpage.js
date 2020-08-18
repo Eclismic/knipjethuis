@@ -6,11 +6,19 @@ const Frontpage = () => {
             <div className="frontpage-s1">
                 <div className="nav-wrapper">
                     <button id="add-haircut">Voeg toe</button>
+                    <button id="add-haircut">KnipJeBijSalon</button>
+                    <button id="add-haircut">LaatJeInspireren</button>
+                    <button id="add-haircut">MeldJeAan Klant</button>
+                    <button id="add-haircut">MeldJeAan Ondernemer</button>
+
                 </div>
                 <div className="title-wrapper">
                     <h4>KnipJeThuis</h4>
                     <p>Voeg jouw knipbeurt toe en zie we er tijd voor je heeft!</p>
                 </div>
+            </div>
+            <div className="frontpage-s2"> 
+                <h4 style={{color: "black"}}>Further explanation</h4>
             </div>
         </div>
     )
