@@ -28,6 +28,11 @@ h4{
   font-family: 'Righteous', cursive;
 }
 
+h3{
+  font-size: 48px;
+  font-family: 'Righteous', cursive;
+}
+
 p{
   color: white;
 }
@@ -52,10 +57,9 @@ p{
   background-color: white;
   width: 80%;
   height: 8em;
-  position: sticky;
+  margin: 0 auto;
+  position: relative;
   top: 100px;
-  left: 100px;
-  right: 100px;
   background-color: var(--fpColor);
   border-radius: 12px;
   border: solid black;

@@ -1,11 +1,14 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Frontpage = () => {
     return (
         <div className="frontpage-wrapper">
             <div className="frontpage-s1">
                 <div className="nav-wrapper">
-                    <button id="add-haircut">Voeg toe</button>
+                    <Link to="/testUrl">
+                        <button id="add-haircut">Voeg toe</button>
+                    </Link>
                     <button id="add-haircut">KnipJeBijSalon</button>
                     <button id="add-haircut">LaatJeInspireren</button>
                     <button id="add-haircut">MeldJeAan Klant</button>
@@ -17,8 +20,8 @@ const Frontpage = () => {
                     <p>Voeg jouw knipbeurt toe en zie we er tijd voor je heeft!</p>
                 </div>
             </div>
-            <div className="frontpage-s2"> 
-                <h4 style={{color: "black"}}>Further explanation</h4>
+            <div className="frontpage-s2">
+                <h3 style={{ color: "black" }}>Further explanation</h3>
             </div>
         </div>
     )
