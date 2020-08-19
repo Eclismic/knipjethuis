@@ -5,8 +5,10 @@ import {
   Route,
   Link
 } from 'react-router-dom'
-import Frontpage from './Components/Frontpage.js'
-import KnipJeThuis from './Components/KnipJeThuis.js'
+import Frontpage from './Components/Frontpage'
+import KnipJeThuis from './Components/KnipJeThuis'
+import KnipJeBijSalon from './Components/KnipJeBijSalon'
+import Login from './Components/Login'
 
 const App = () => {
   return (
@@ -14,7 +16,10 @@ const App = () => {
       <div className="App">
           <Route exact path="/" component={Frontpage}/>
       </div>
-      <Route exact path="/testUrl" component={KnipJeThuis}/>
+      <Route exact path="/cut@home-request" component={KnipJeThuis}/>
+      <Route exact path="/cut@salon-request" component={KnipJeBijSalon}/>
+      <Route exact path="/cut@home-request" component={KnipJeThuis}/>
+      <Route exact path="/login" component={Login}/>
     </Router>
   );
 }

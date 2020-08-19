@@ -69,15 +69,20 @@ p{
   box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
 
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 #add-haircut{
-  width: 100px;
+  border-radius: 12px;
+  margin: 10px;
+  height: 90%;
+  padding: 5px;
+  min-width: 100px;
 }
 
 #add-haircut:hover{
   cursor: pointer;
+  border: solid 2px black;
 }
 
 .title-wrapper{
@@ -97,4 +102,59 @@ p{
   -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
 	-moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
     box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+}
+
+/*
+*
+*
+*Login
+*
+*/
+
+.login-wrapper{
+  background-color: rgb(151, 148, 148);
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+}
+
+.login-container{
+  width: 800px;
+  height: 800px;
+  background-color: white;
+  margin: 0 auto;
+  margin-top: 200px;
+  border: solid black 3px;
+  border-radius: 12px;
+  padding: 5px;
+
+  -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+
+  display: grid;
+  grid-template-columns: repeat(1fr, 2);
+}
+
+
+#back-button{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 300px;
+  margin-top: 100px;
+
+  position: absolute;
+  right: 0;
+
+  -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+}
+
+#back-button:hover{
+  cursor: pointer;
+  border: solid black 2px;
+  font-size: 18px;
+  
 }

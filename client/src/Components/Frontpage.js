@@ -6,14 +6,17 @@ const Frontpage = () => {
         <div className="frontpage-wrapper">
             <div className="frontpage-s1">
                 <div className="nav-wrapper">
-                    <Link to="/testUrl">
+                    <Link to="/cut@home-request">
                         <button id="add-haircut">Voeg toe</button>
                     </Link>
-                    <button id="add-haircut">KnipJeBijSalon</button>
+                    <Link to="/cut@salon-request">
+                        <button id="add-haircut">KnipJeBijSalon</button>
+                    </Link>
                     <button id="add-haircut">LaatJeInspireren</button>
-                    <button id="add-haircut">MeldJeAan Klant</button>
-                    <button id="add-haircut">MeldJeAan Ondernemer</button>
-
+                    <button id="add-haircut">LogIn</button>
+                    <Link to="/login">
+                        <button id="add-haircut">MeldJeAan</button>
+                    </Link>
                 </div>
                 <div className="title-wrapper">
                     <h4>KnipJeThuis</h4>
