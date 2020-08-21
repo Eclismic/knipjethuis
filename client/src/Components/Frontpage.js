@@ -14,7 +14,7 @@ const Frontpage = () => {
                     </Link>
                     <button id="add-haircut">LaatJeInspireren</button>
                     <button id="add-haircut">LogIn</button>
-                    <Link to="/login">
+                    <Link to="/subscribe">
                         <button id="add-haircut">MeldJeAan</button>
                     </Link>
                 </div>

@@ -33,6 +33,10 @@ h3{
   font-family: 'Righteous', cursive;
 }
 
+h1{
+  font-size: 20px;
+}
+
 p{
   color: white;
 }
@@ -111,14 +115,14 @@ p{
 *
 */
 
-.login-wrapper{
+.subscription-wrapper{
   background-color: rgb(151, 148, 148);
   height: 100vh;
   width: 100vw;
   position: absolute;
 }
 
-.login-container{
+.subscription-container{
   width: 800px;
   height: 800px;
   background-color: white;
@@ -133,9 +137,50 @@ p{
     box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
 
   display: grid;
-  grid-template-columns: repeat(1fr, 2);
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "subscr-header subscr-header"
+  "subscr-comp subscr-cust"
+  ;
 }
 
+.subscription-header{
+  grid-area: subscr-header;
+}
+
+.subscription-company{
+  grid-area: subscr-comp;
+  justify-content: space-between;
+  margin-right: 100px;
+  margin-left: 50px;
+}
+
+.company-arrow-title{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.company-arrow-title:hover{
+  cursor: pointer;
+}
+
+.subscription-customer{
+  grid-area: subscr-cust;
+  justify-content: space-between;
+  margin-right: 100px;
+  margin-left: 50px;
+}
+
+.customer-arrow-title{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.customer-arrow-title:hover{
+  cursor:pointer;
+}
 
 #back-button{
   border-radius: 50%;
@@ -156,5 +201,4 @@ p{
   cursor: pointer;
   border: solid black 2px;
   font-size: 18px;
-  
 }
