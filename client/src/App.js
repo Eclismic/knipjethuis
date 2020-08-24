@@ -9,6 +9,7 @@ import Frontpage from './Components/Frontpage'
 import KnipJeThuis from './Components/KnipJeThuis'
 import KnipJeBijSalon from './Components/KnipJeBijSalon'
 import Subscription from './Components/Subscription'
+import UseFormSubscriptionCustomer from './Components/UserFormSubscriptionCustomer'
 
 const App = () => {
   return (
@@ -18,8 +19,8 @@ const App = () => {
       </div>
       <Route exact path="/cut@home-request" component={KnipJeThuis}/>
       <Route exact path="/cut@salon-request" component={KnipJeBijSalon}/>
-      <Route exact path="/cut@home-request" component={KnipJeThuis}/>
       <Route exact path="/subscribe" component={Subscription}/>
+      <Route exact path="/subscription-customer" component={UseFormSubscriptionCustomer}/>
     </Router>
   );
 }

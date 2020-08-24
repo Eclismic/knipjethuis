@@ -17,6 +17,7 @@ const Frontpage = () => {
                     <Link to="/subscribe">
                         <button id="add-haircut">MeldJeAan</button>
                     </Link>
+                    
                 </div>
                 <div className="title-wrapper">
                     <h4>KnipJeThuis</h4>
