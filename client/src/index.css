@@ -111,7 +111,7 @@ p{
 /*
 *
 *
-*Login
+*Subscription
 *
 */
 
@@ -123,8 +123,8 @@ p{
 }
 
 .subscription-container{
-  width: 800px;
-  height: 800px;
+  width: 600px;
+  height: 600px;
   background-color: white;
   margin: 0 auto;
   margin-top: 200px;
@@ -147,6 +147,7 @@ p{
 .subscription-header{
   grid-area: subscr-header;
 }
+
 
 .subscription-company{
   grid-area: subscr-comp;
