@@ -1,15 +1,18 @@
 import React from 'react'
 import './CSS/UseFormSubscriptionCustomer.css'
 
-function FormUserDetails() {
+const FormUserDetails = ({NextStep}) => {
+
+    const Continue = () => {
+    }
+
     return (
         <div>
             <div className="subscr-customer">
                 <div className="subscr-customer-container">
-
                     <div className="subscr-customer-footer">
-                        <button>Terug</button>
-                        <button>Verder</button>
+                        <button id="next-back-btn">Terug</button>
+                        <button id="next-back-btn" onClick={NextStep()}>Verder</button>
                     </div>
                 </div>
             </div>

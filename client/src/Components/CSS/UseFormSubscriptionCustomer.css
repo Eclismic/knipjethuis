@@ -24,5 +24,20 @@
 
 .subscr-customer-footer{
     position: absolute;
+    width: 100%;
     bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#next-back-btn{
+  border-radius: 12px;
+  height: 50px;
+  width: 100px;
+  margin: 20px;
+}
+
+#next-back-btn:hover{
+  cursor: pointer;
+  border: solid 3px black;
 }

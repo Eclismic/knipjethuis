@@ -2,16 +2,17 @@ import React, {useState} from 'react'
 import './CSS/UseFormSubscriptionCustomer.css'
 import FormUserDetails from './FormUserDetails'
 
-function UserFormSubscriptionCustomer() {
+const UserFormSubscriptionCustomer = () => {
 
     const [step, setStep] = useState(1);
-    
     
 
     switch(step){
         case 1:
             return(
-                <FormUserDetails/>
+                <FormUserDetails 
+                NextStep={() => setStep(2)}
+                />
             )
 
         case 2:
