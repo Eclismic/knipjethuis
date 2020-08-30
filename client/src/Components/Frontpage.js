@@ -1,7 +1,18 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useAuth0 } from '@auth0/auth0-react';
 
 const Frontpage = () => {
+
+    const {
+        isLoading,
+        isAuthenticated,
+        error,
+        user,
+        loginWithRedirect,
+        logout,
+    } = useAuth0();
+
     return (
         <div className="frontpage-wrapper">
             <div className="frontpage-s1">
@@ -13,11 +24,16 @@ const Frontpage = () => {
                         <button id="add-haircut">KnipJeBijSalon</button>
                     </Link>
                     <button id="add-haircut">LaatJeInspireren</button>
-                    <button id="add-haircut">LogIn</button>
-                    <Link to="/subscribe">
-                        <button id="add-haircut">MeldJeAan</button>
-                    </Link>
-                    
+
+                    {isAuthenticated ?
+                        <div id="logged-in">
+                            <span style={{color: 'white'}}>Hello {user.name}</span>
+                            <button style={{borderRadius: '12px'}} onClick={() => logout({ returnTo: window.location.origin })}>
+                                Uitloggen
+                             </button>
+                        </div> 
+                        : <button id="add-haircut" onClick={loginWithRedirect}>Log in</button>}
+                        
                 </div>
                 <div className="title-wrapper">
                     <h4>KnipJeThuis</h4>

@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import './CSS/UseFormSubscriptionCustomer.css'
 import FormUserDetails from './FormUserDetails'
+import FormUserAuthentication from './FormUserAuthentication'
 
 const UserFormSubscriptionCustomer = () => {
 
@@ -20,7 +21,7 @@ const UserFormSubscriptionCustomer = () => {
             console.log("test case 2");
 
             return(
-                <h2>Test</h2>
+                <FormUserAuthentication/>
             ) 
     }
 }
